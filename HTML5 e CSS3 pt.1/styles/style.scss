@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* Color Theme Swatches in Hex */
+
+$Wood-1-hex: #351a12;
+$Wood-2-hex: #e1a290;
+$Wood-3-hex: #db6a4a;
+$Wood-4-hex: #5c423b;
+$Wood-5-hex: #a85139;
+
+.content {
+    width: 95%;
+    background-color: $Wood-1-hex;
+    padding: 20px;
+}
+
+body {
+    background-color: #180c08;
+    color: $Wood-2-hex;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 3%;
+    font-size: 16pt;
+}
+.main {
+    background-color: $Wood-4-hex;
+}
+
+//Sobre a Barbearia alura
+.conteiner {
+    text-align: center;
+    position: relative;
+    .text {
+        font-family: "Langar", cursive;
+        text-shadow: 2px 2px black;
+        font-size: 50pt;
+        color: $Wood-3-hex;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .img {
+        filter: blur(5px);
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    //Nossa missao
+    .mission {
+        margin: auto;
+        font-size: 20pt;
+        font-family: "Dancing Script", cursive;
+        background-color: darken($Wood-3-hex, $amount: 10);
+        border-radius: 5px;
+        text-align: center;
+        width: 75%;
+        em {
+            font-size: 25pt;
+            color: darken($color: rgb(136, 253, 253), $amount: 30);
+        }
+    }
+
+    //beneficios
+    .sec {
+        position: relative;
+        .list {
+            position: relative;
+            background-color: $Wood-4-hex;
+            border-radius: 10px;
+            border: 2px solid;
+            padding: 0;
+            display: inline-block;
+            text-align: center;
+            width: fit-content;
+            list-style-type: none;
+            ul {
+                position: relative;
+                font-size: 20pt;
+                padding: 20px;
+                color: darken($color: rgb(136, 253, 253), $amount: 30);
+            }
+            li {
+                position: relative;
+                padding: 10px;
+                font-style: italic;
+            }
+        }
+
+        img {
+            position: relative;
+            border-radius: 20px;
+            width: 50%;
+            top: 50%;
+            left: 15%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}
