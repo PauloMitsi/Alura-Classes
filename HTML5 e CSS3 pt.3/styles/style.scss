@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* Color Theme Swatches in Hex */
+
+$Wood-1-hex: #351a12;
+$Wood-2-hex: #e1a290;
+$Wood-3-hex: #db6a4a;
+$Wood-4-hex: #5c423b;
+$Wood-5-hex: #a85139;
+
+///////////////////////////////////////////////////
+///////////////// Alura Index /////////////////////
+///////////////////////////////////////////////////
+
+body {
+    background-color: #180c08;
+    color: $Wood-2-hex;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+
+.content-index {
+    width: 95%;
+    background-color: $Wood-1-hex;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.main {
+    background-color: $Wood-4-hex;
+    padding: 10px;
+}
+
+//Sobre a Barbearia alura
+.conteiner {
+    text-align: center;
+    position: relative;
+    .img {
+        filter: blur(5px);
+        width: 100%;
+    }
+    .text {
+        font-family: "Langar", cursive;
+        text-shadow: 2px 2px black;
+        font-size: 50pt;
+        color: $Wood-3-hex;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+//Nossa missao
+.mission {
+    margin: auto;
+    font-size: 20pt;
+    font-family: "Dancing Script", cursive;
+    background-color: darken($Wood-3-hex, $amount: 10);
+    border-radius: 5px;
+    text-align: center;
+    width: 75%;
+    em {
+        font-size: 25pt;
+        color: darken($color: rgb(136, 253, 253), $amount: 30);
+    }
+}
+
+//beneficios
+.sec {
+    text-align: center;
+    position: relative;
+    .list {
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+        background-color: $Wood-4-hex;
+        border-radius: 10px;
+        border: 2px solid;
+        padding: 0;
+        text-align: center;
+        width: fit-content;
+        list-style-type: none;
+        ul {
+            width: fit-content;
+            text-align: center;
+            position: relative;
+            font-size: 20pt;
+            padding: 20px;
+            color: darken($color: rgb(136, 253, 253), $amount: 30);
+        }
+        li {
+            position: relative;
+            padding: 10px;
+            font-style: italic;
+            h2 {
+                font-size: 200pt;
+            }
+        }
+    }
+
+    .barcut {
+        width: 50%;
+        border-radius: 10px;
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Alura Produtos /////////////////////
+//////////////////////////////////////////////////////
+
+//main
+.content-prod {
+    padding: 10px;
+    margin: 20px 20px;
+    background-color: $Wood-1-hex;
+    ul {
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        li {
+            width: fit-content;
+
+            //border
+            transition: 0.5s;
+            border: $Wood-2-hex solid;
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-radius: 0 0 10px 10px;
+            //border
+
+            display: inline-block;
+            background-color: $Wood-5-hex;
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            img {
+                width: 250px;
+                transition: 0.5s;
+            }
+            h2,
+            p {
+                cursor: default;
+                word-wrap: break-word;
+                height: fit-content;
+                font-size: 20pt;
+                font-weight: bold;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+        }
+        li:hover {
+            transition: 0.5s;
+            border-color: darken($color: $Wood-2-hex, $amount: 15);
+            h2,
+            p {
+                transition: 0.5s;
+                font-size: 23pt;
+            }
+            img {
+                transition: 0.5s;
+                width: 270px;
+            }
+        }
+        li:active {
+            transition: 0s;
+            border-color: lighten($color: $Wood-2-hex, $amount: 20);
+        }
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Alura Contato /////////////////////
+//////////////////////////////////////////////////////
+
+//main
+.content-cont {
+    background-color: $Wood-1-hex;
+    padding: 10px;
+    margin: 20px auto;
+    width: 95%;
+    text-align: center;
+    legend {
+        color: $Wood-5-hex;
+        margin: 10px auto 50px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    form {
+        margin: 10px auto;
+        display: block;
+        .padrao {
+            margin-top: 10px;
+            label {
+                text-align: center;
+                width: 50%;
+            }
+            input,
+            textarea {
+                background-color: $Wood-2-hex;
+                font-size: 15pt;
+                text-align: center;
+                width: 50%;
+                margin: auto;
+                padding: 5px;
+                display: block;
+            }
+            textarea {
+                height: 250px;
+            }
+        }
+
+        .contato {
+            margin-top: 25px;
+            legend {
+                margin: 10px auto;
+                color: $Wood-5-hex;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            #horario {
+                cursor: pointer;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 16pt;
+                width: 100px;
+            }
+        }
+
+        .enviar {
+            cursor: pointer;
+            background-color: $Wood-2-hex;
+            margin-top: 75px;
+            width: 250px;
+            height: 50px;
+            font-size: 20pt;
+            border: none;
+            border-radius: 50px;
+            transition: 0.5s all;
+        }
+        .enviar:hover {
+            transform: scale(1.2);
+            background-color: darken($color: $Wood-2-hex, $amount: 15);
+            font-size: 25pt;
+        }
+    }
+    .tabela {
+        margin: 20px auto;
+        tbody {
+            tr {
+                background-color: $Wood-3-hex;
+                font-size: 18pt;
+            }
+            td,
+            th {
+                font-style: italic;
+                border: 2px solid $Wood-4-hex;
+                padding: 10px;
+                color: $Wood-1-hex;
+            }
+        }
+
+        thead {
+            tr {
+                color: black;
+                background-color: darken($color: $Wood-3-hex, $amount: 20);
+                th.destaque {
+                    font-style: italic;
+                    border: 2px solid $Wood-4-hex;
+                    padding: 10px;
+                    font-size: 20pt;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Header e Footer ////////////////////
+//////////////////////////////////////////////////////
+
+//header
+.box {
+    background-color: $Wood-4-hex;
+    .toppg {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            margin: 0 auto;
+        }
+        .navegation {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            ul {
+                li {
+                    transition: 0.8s;
+                    display: inline;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                    a {
+                        transition: 0.5s all;
+                        font-weight: bold;
+                        color: $Wood-3-hex;
+                        font-size: 20pt;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        font-size: 23pt;
+                        color: darken($color: $Wood-3-hex, $amount: 10);
+                    }
+                    a:active {
+                        transition: 0s;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+.endpg {
+    background-color: $Wood-4-hex;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 75px;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

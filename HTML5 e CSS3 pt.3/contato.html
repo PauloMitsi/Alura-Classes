@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura - Contato</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <header class='box'>
+        <div class="toppg">
+            <h1><img src="images/logo.png" alt=""></h1>
+            <nav class='navegation'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-cont">
+
+        <p>Digite as suas informações logo abaixo:</p>
+
+        <form action="">
+
+            <!-- Nome-->
+            <fieldset class="padrao">
+                <label for="nomecompleto">Nome Completo</label>
+                <input type="text" name="nomecompleto" id="nomecompleto" required>
+            </fieldset>
+
+            <!-- Email -->
+            <fieldset class="padrao">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="contato@hotmail.com" required>
+            </fieldset>
+
+            <!-- Telefone -->
+            <fieldset class="padrao">
+                <label for="telefone">Telefone (DDD)</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+            </fieldset>
+
+            <!-- Comentário -->
+            <fieldset class="padrao">
+                <label for="comentario">Adicione um comentário</label>
+                <textarea name="comentario" id="comentario"></textarea>
+            </fieldset>
+
+            <!-- Como nos contatar -->
+            <fieldset class="contato">
+                <legend>Como prefere nos contatar?</legend>
+                <label for="Email">
+                    <input type="radio" name="contato" id="Email" required>Email
+                </label>
+
+                <label for="Whatsapp">
+                    <input type="radio" name="contato" id="Whatsapp" required>Whatsapp
+                </label>
+
+
+                <label for="Telefone">
+                    <input type="radio" name="contato" id="Telefone" required>Telefone
+                </label>
+
+            </fieldset>
+
+            <!-- Receber novidades -->
+            <fieldset class="contato">
+                <label for="novidade">
+                    <input type="checkbox" name="novidade" id="novidade">Quer receber novidades pelo email?</label>
+            </fieldset>
+
+            <!-- Horario atendido-->
+            <fieldset class="contato">
+                <legend>Que horario você deseja ser atendido?</legend>
+                <select name="horario" id="horario" required>
+                    <option value="Manha">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                </select>
+            </fieldset>
+
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="destaque">Horarios</th>
+                    <th class="destaque">Dias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 18:00</td>
+                    <td>segundas à sextas</td>
+                </tr>
+                <tr>
+                    <td>8:00 - 14:00</td>
+                    <td>sábados</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="endpg">
+        <p>&copy;Copyright Paulo Mitsi - 2020</p>
+    </footer>
+
+</body>
+
+</html>
