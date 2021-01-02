@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Color Theme Swatches in Hex */
+
+$Wood-1-hex: #351a12;
+$Wood-2-hex: #e1a290;
+$Wood-3-hex: #db6a4a;
+$Wood-4-hex: #5c423b;
+$Wood-5-hex: #a85139;
+
+body {
+    background-color: #180c08;
+    color: $Wood-2-hex;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+
+///////////////////////////////////////////////////
+///////////////// Alura Index /////////////////////
+///////////////////////////////////////////////////
+
+.content-index {
+    background: linear-gradient(
+        $Wood-4-hex 50%,
+        lighten($color: $Wood-4-hex, $amount: 10)
+    );
+    margin: 20px 50px;
+    padding: 15px;
+    position: relative;
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        .text {
+            z-index: 100;
+            font-size: 3em;
+            width: 100%;
+            color: $Wood-2-hex;
+            text-shadow: 2px 1px 1px black;
+            font-family: 'Dancing Script';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img {
+            filter: blur(3px);
+            width: 100%;
+        }
+    }
+
+    .sobre {
+        position: relative;
+        margin: 20px auto;
+        h1 {
+            margin: 0 0 1em;
+            font-size: 1.5em;
+        }
+
+        img {
+            position: relative;
+            top: 50%;
+            margin: 0 10px 10px 0;
+            float: left;
+            height: 100%;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .parag-1 {
+            margin: 0 auto;
+            word-break: break-word;
+            width: 60%;
+        }
+
+        .missao {
+            clear: left;
+            padding: 2px;
+            background-color: $Wood-3-hex;
+            margin: 1em auto;
+            text-align: center;
+            em {
+                color: $Wood-1-hex;
+                font-size: 20pt;
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .mapa {
+        margin: 50px auto;
+        text-align: center;
+        h3 {
+            margin: 0 0 0.2em;
+            font-size: 1.5em;
+        }
+        iframe {
+            margin: 10px auto;
+        }
+    }
+
+    .beneficios {
+        position: relative;
+        text-align: center;
+        h2 {
+            margin: 0 0 1em;
+            font-size: 1.5em;
+        }
+
+        .cont-beneficios {
+            width: 100%;
+            .lista {
+                line-height: 1.5em;
+                width: 50%;
+                vertical-align: top;
+                width: fit-content;
+                display: inline-block;
+                li:nth-child(2n) {
+                    color: darken($color: $Wood-2-hex, $amount: 10);
+                }
+                li:before {
+                    content: '⮡  ';
+                }
+            }
+
+            .barber {
+                width: 400px;
+                box-shadow: 10px 10px rgb(79, 160, 253),
+                    -10px -10px rgb(170, 61, 61);
+                margin: 10px 0 0 20px;
+                transition: 0.5s;
+            }
+
+            .barber:hover {
+                box-shadow: -10px -10px rgb(79, 160, 253),
+                    10px 10px rgb(170, 61, 61);
+            }
+        }
+    }
+
+    .video {
+        margin: 50px auto;
+        text-align: center;
+        iframe {
+            width: 75%;
+            height: 500px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Alura Produtos /////////////////////
+//////////////////////////////////////////////////////
+
+//main
+.content-prod {
+    padding: 10px;
+    margin: 20px 20px;
+    background-color: $Wood-1-hex;
+    ul {
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        li {
+            width: fit-content;
+
+            //border
+            transition: 0.5s;
+            border: $Wood-2-hex solid;
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-radius: 0 0 10px 10px;
+            //border
+
+            display: inline-block;
+            background-color: $Wood-5-hex;
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            img {
+                width: 250px;
+                transition: 0.5s;
+            }
+            h2,
+            p {
+                cursor: default;
+                word-wrap: break-word;
+                height: fit-content;
+                font-size: 20pt;
+                font-weight: bold;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+        }
+        li:hover {
+            transition: 0.5s;
+            border-color: darken($color: $Wood-2-hex, $amount: 15);
+            h2,
+            p {
+                transition: 0.5s;
+                font-size: 23pt;
+            }
+            img {
+                transition: 0.5s;
+                width: 270px;
+            }
+        }
+        li:active {
+            transition: 0s;
+            border-color: lighten($color: $Wood-2-hex, $amount: 20);
+        }
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Alura Contato /////////////////////
+//////////////////////////////////////////////////////
+
+//main
+.content-cont {
+    background-color: $Wood-1-hex;
+    padding: 10px;
+    margin: 20px auto;
+    width: 95%;
+    text-align: center;
+    legend {
+        color: $Wood-5-hex;
+        margin: 10px auto 50px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    form {
+        margin: 10px auto;
+        display: block;
+        .padrao {
+            margin-top: 10px;
+            label {
+                text-align: center;
+                width: 50%;
+            }
+            input,
+            textarea {
+                background-color: $Wood-2-hex;
+                font-size: 15pt;
+                text-align: center;
+                width: 50%;
+                margin: auto;
+                padding: 5px;
+                display: block;
+            }
+            textarea {
+                height: 250px;
+            }
+        }
+
+        .contato {
+            margin-top: 25px;
+            legend {
+                margin: 10px auto;
+                color: $Wood-5-hex;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            #horario {
+                cursor: pointer;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 16pt;
+                width: 100px;
+            }
+        }
+
+        .enviar {
+            cursor: pointer;
+            background-color: $Wood-2-hex;
+            margin-top: 75px;
+            width: 250px;
+            height: 50px;
+            font-size: 20pt;
+            border: none;
+            border-radius: 50px;
+            transition: 0.5s all;
+        }
+        .enviar:hover {
+            transform: scale(1.2);
+            background-color: darken($color: $Wood-2-hex, $amount: 15);
+            font-size: 25pt;
+        }
+    }
+    .tabela {
+        margin: 20px auto;
+        tbody {
+            tr {
+                background-color: $Wood-3-hex;
+                font-size: 18pt;
+            }
+            td,
+            th {
+                font-style: italic;
+                border: 2px solid $Wood-4-hex;
+                padding: 10px;
+                color: $Wood-1-hex;
+            }
+        }
+
+        thead {
+            tr {
+                color: black;
+                background-color: darken($color: $Wood-3-hex, $amount: 20);
+                th.destaque {
+                    font-style: italic;
+                    border: 2px solid $Wood-4-hex;
+                    padding: 10px;
+                    font-size: 20pt;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////
+///////////////// Header e Footer ////////////////////
+//////////////////////////////////////////////////////
+
+//header
+.box {
+    background-color: $Wood-4-hex;
+    .toppg {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            margin: 0 auto;
+        }
+        .navegation {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            ul {
+                li {
+                    transition: 0.8s;
+                    display: inline;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                    a {
+                        transition: 0.5s all;
+                        font-weight: bold;
+                        color: $Wood-3-hex;
+                        font-size: 20pt;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        font-size: 23pt;
+                        color: darken($color: $Wood-3-hex, $amount: 10);
+                    }
+                    a:active {
+                        transition: 0s;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+.endpg {
+    background-color: $Wood-4-hex;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 75px;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//////////////////////////////////////////////////////
+/////////////////////// Media ////////////////////////
+//////////////////////////////////////////////////////
+
+@media screen and (max-width: 580px) {
+    * {
+        font-size: 10pt;
+    }
+    .box,
+    .video,
+    .sobre,
+    .endpg {
+        width: auto;
+    }
+
+    .content-index .sobre .missao em {
+        font-size: 12pt;
+    }
+    .content-index .banner .text {
+        font-size: 2em;
+    }
+
+    .content-index .beneficios .cont-beneficios .barber {
+        width: 120px;
+    }
+
+    .content-index .sobre .parag-1 {
+        text-align: center;
+        img {
+            float: none;
+            width: 100px;
+        }
+    }
+
+    .box .toppg {
+        text-align: center;
+        .navegation {
+            position: relative;
+            padding-bottom: 10px;
+        }
+    }
+    
+    .endpg{
+        font-size: 15px;
+    }
+}
