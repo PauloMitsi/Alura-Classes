@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* Color Theme Swatches in Hex */
+/* Variaveis */
+/* Variaveis */
+body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1b1b1a;
+  color: #d4cfcd;
+}
+
+.corpo {
+  text-align: center;
+  background-color: #52504f;
+  padding: 20px;
+  margin-bottom: 1.5em;
+  margin: 1.5em 5%;
+}
+
+.corpo .tituloPrincipal {
+  font-size: 1.5em;
+  margin: 0 0 1em;
+}
+
+.corpo .descricao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5em;
+  border: #827f7e 2px solid;
+  border-radius: 10px;
+  margin: 0 0 1.5em;
+}
+
+.corpo .descricao p {
+  width: 50%;
+}
+
+.corpo .descricao .pianoImg {
+  border-radius: 10px;
+}
+
+.corpo .qualidadeTitulo {
+  font-size: 1.5em;
+}
+
+.corpo .qualidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.corpo .qualidades .listaQualidades li {
+  padding: 10px;
+}
+
+.corpo .qualidades .listaQualidades li:before {
+  content: '⤷';
+}
+
+.corpo .qualidades img {
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  background-color: #b1a8a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1.5em;
+}
+
+header .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .conteiner a {
+  font-size: 1.5em;
+  color: #d4cfcd;
+  text-decoration: none;
+  border: 2px solid #696665;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .conteiner a:hover {
+  color: #696665;
+  background-color: #d4cfcd;
+  border-color: #d4cfcd;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: #424140;
+  background-color: #b1a8a4;
+}
+
+footer h1 {
+  padding: 10px;
+}
+
+@media (max-width: 540px) {
+  .corpo,
+  header,
+  .qualidades,
+  .descricao,
+  .conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header {
+    width: 100%;
+  }
+  header .conteiner {
+    text-align: center;
+    width: 100%;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .conteiner a {
+    margin: 0 0 10px;
+  }
+  .pianoImg {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

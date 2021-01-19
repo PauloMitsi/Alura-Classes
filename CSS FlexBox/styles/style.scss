@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Color Theme Swatches in Hex */
+$BG-color-1-hex: #424140;
+$BG-color-2-hex: #d4cfcd;
+$BG-color-3-hex: #827f7e;
+$BG-color-4-hex: #52504f;
+$BG-color-5-hex: #696665;
+
+/* Variaveis */
+
+$CorFundoEscura: darken(
+    $color: $BG-color-2-hex,
+    $amount: 15,
+);
+
+$Tamanho-Padrao: 1.5em;
+
+/* Variaveis */
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: darken($color: $BG-color-1-hex, $amount: 15);
+    color: #d4cfcd;
+}
+
+////////////////////////////////////////////
+///////////////////Main/////////////////////
+////////////////////////////////////////////
+
+.corpo {
+    text-align: center;
+    background-color: $BG-color-4-hex;
+    padding: 20px;
+    margin-bottom: $Tamanho-Padrao;
+    margin: $Tamanho-Padrao 5%;
+
+    .tituloPrincipal {
+        font-size: $Tamanho-Padrao;
+        margin: 0 0 1em;
+    }
+
+    .descricao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $Tamanho-Padrao;
+        border: $BG-color-3-hex 2px solid;
+        border-radius: 10px;
+        margin: 0 0 $Tamanho-Padrao;
+        p {
+            width: 50%;
+        }
+        .pianoImg {
+            border-radius: 10px;
+        }
+    }
+
+    .qualidadeTitulo {
+        font-size: $Tamanho-Padrao;
+    }
+    .qualidades {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        .listaQualidades {
+            li {
+                padding: 10px;
+            }
+            li:before {
+                content: '⤷';
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+////////////////////////////////////////////
+//////////////Header e Footer///////////////
+////////////////////////////////////////////
+
+header {
+    width: 100%;
+    background-color: $CorFundoEscura;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: $Tamanho-Padrao;
+    .conteiner {
+        display: flex;
+        a {
+            font-size: $Tamanho-Padrao;
+            color: $BG-color-2-hex;
+            text-decoration: none;
+            border: 2px solid $BG-color-5-hex;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 5px;
+            transition: 0.5s;
+        }
+        a:hover {
+            color: $BG-color-5-hex;
+            background-color: $BG-color-2-hex;
+            border-color: $BG-color-2-hex;
+        }
+    }
+}
+
+footer {
+    h1 {
+        padding: 10px;
+    }
+    width: 100%;
+    text-align: center;
+    color: $BG-color-1-hex;
+    background-color: $CorFundoEscura;
+}
+
+////////////////////////////////////////////
+///////////////Media Queries////////////////
+////////////////////////////////////////////
+
+@media (max-width: 540px) {
+    .corpo,
+    header,
+    .qualidades,
+    .descricao,
+    .conteiner {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .conteiner {
+        text-align: center;
+        width: 100%;
+        align-items: initial;
+    }
+
+    .conteiner a {
+        margin: 0 0 10px;
+    }
+
+    .pianoImg {
+        width: 100px;
+    }
+}
