@@ -1,0 +1,122 @@
+.destaques {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 33.3% 33.3% 33.3%;
+      grid-template-rows: 33.3% 33.3% 33.3%;
+  height: calc(100vh - 50px);
+  background-color: #f1f1f1;
+  gap: 5px;
+  padding: 0 15px 10px 0;
+}
+
+.destaques__secundario,
+.destaques__principal {
+  background: center / cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destaques__titulo {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  color: white;
+}
+
+.destaques__principal {
+  background: url(../../img/fortnite.jpg) center/cover no-repeat;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.destaques__secundario:nth-child(2) {
+  background-image: url(../../img/pubg.jpg);
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+}
+
+.destaques__secundario:nth-child(3) {
+  background-image: url(../../img/slack.png);
+}
+
+.destaques__secundario:nth-child(4) {
+  background-image: url(../../img/whatsapp.png);
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+}
+
+.destaques__secundario:nth-child(5) {
+  background-image: url(../../img/cs-go.jpg);
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+}
+
+.destaques__categorias {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.destaques__categorias___lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.destaques__categorias___item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+}
+
+.destaques__categorias___link {
+  text-align: center;
+  color: black;
+}
+/*# sourceMappingURL=destaque.css.map */

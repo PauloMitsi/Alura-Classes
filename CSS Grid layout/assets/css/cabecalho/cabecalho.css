@@ -1,0 +1,9 @@
+.menu__link {
+  color: black;
+  padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link.ativo {
+  border-bottom: 4px solid #8989ff;
+}
+/*# sourceMappingURL=cabecalho.css.map */

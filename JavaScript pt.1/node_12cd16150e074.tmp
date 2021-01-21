@@ -1,0 +1,53 @@
+/*var lista_cidades = new Array();
+var lista_disponivel = new Array();
+function resul() {
+    var cidade = document.getElementById('inserir').value;
+    var disponibilidade = document.getElementsByName('Disp');
+
+    //Disponibilidade
+    var disp = '';
+    if (disponibilidade[0].checked) {
+        disp = 'Disponível';
+    } else if (disponibilidade[1].checked) {
+        disp = 'Indiponível';
+    }
+
+    if (cidade != '' && disp != '') {
+        //compara se a cidade ja foi adicionada
+        var existe_cidade = lista_cidades.indexOf(cidade);
+
+        if (existe_cidade == -1) {
+            lista_cidades.push(cidade);
+
+            //tabela
+            var tabela = document.getElementById('corpo_da_tabela');
+            var tabela_divisao = document.createElement('tr');
+            var tabela_cidade = document.createElement('td');
+            var tabela_disponivel = document.createElement('td');
+            //tabela
+
+            tabela_cidade.innerHTML = cidade;
+            tabela_disponivel.innerHTML = disp;
+
+            tabela_divisao.appendChild(tabela_cidade);
+            tabela_divisao.appendChild(tabela_disponivel);
+            tabela.appendChild(tabela_divisao);
+        } else {
+            alert(`${cidade} já está na tabela`);
+        }
+    } else {
+        alert('Preencha todas as lacunas');
+    }
+}*/
+
+var lista = new Array (
+    'São Paulo',
+    'Rio de Janeiro',
+    'Paraná',
+)
+
+i = 0
+
+while (i < 3) {
+    console.log(lista[i]);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Viagex</title>
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+
+    <body>
+        <main class="box">
+            <h1>Compre sua passagem de viagem:</h1>
+
+            <form action="" class="add">
+                
+                <!-- Insira a Cidade-->
+                <fieldset>
+                    <label class="box-inserir" for="inserir">
+                        Insira a cidade
+
+                        <input
+                            class="inserir"
+                            type="text"
+                            name="inserir"
+                            id="inserir"
+                            required
+                        />
+                    </label>
+                </fieldset>
+
+                <!-- Disponível-->
+                <fieldset>
+                    <label for="Disp">
+                        Disponível
+                        <input type="radio" name="Disp" id="Disp" required />
+                    </label>
+                </fieldset>
+
+                <!-- Não Disponível-->
+                <fieldset>
+                    <label for="NaoDisp">
+                        Indisponível
+                        <input type="radio" name="Disp" id="NaoDisp" required/>
+                    </label>
+                </fieldset>
+
+                <input
+                    class="botao"
+                    type="button"
+                    value="Inserir"
+                    onclick="resul()"
+                />
+                <input type="button" class="botao" value="Excluir">
+            </form>
+
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Cidades</th>
+                        <th>Disponibilidade</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpo_da_tabela"></tbody>
+            </table>
+        </main>
+    </body>
+    <script src="Js-1.js"></script>
+</html>

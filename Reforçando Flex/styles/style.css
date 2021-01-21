@@ -1,0 +1,36 @@
+.bloco1 {
+  height: 50px;
+  width: 50px;
+  background-color: #021e28;
+}
+
+.bloco2 {
+  height: 50px;
+  width: 50px;
+  background-color: #043c50;
+}
+
+.bloco3 {
+  height: 50px;
+  width: 50px;
+  background-color: #065a78;
+}
+
+.bloco1 {
+  width: 50px;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 5 100px;
+          flex: 2 5 100px;
+}
+/*# sourceMappingURL=style.css.map */

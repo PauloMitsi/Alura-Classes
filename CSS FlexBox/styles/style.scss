@@ -57,6 +57,12 @@ body {
         }
     }
 
+    .listaQualidades{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
     .qualidadeTitulo {
         font-size: $Tamanho-Padrao;
     }
@@ -124,9 +130,9 @@ footer {
 ///////////////Media Queries////////////////
 ////////////////////////////////////////////
 
-@media (max-width: 540px) {
-    .corpo,
+@media (max-width: 768px) {
     header,
+    .corpo,
     .qualidades,
     .descricao,
     .conteiner {
@@ -142,9 +148,8 @@ footer {
         width: 100%;
         align-items: initial;
     }
-
     .conteiner a {
-        margin: 0 0 10px;
+        margin: 0 10px 10px;
     }
 
     .pianoImg {

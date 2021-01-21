@@ -1,0 +1,17 @@
+@for $i from 1 to 4 {
+    .bloco#{$i} {
+        height: 50px;
+        width: 50px;
+        background-color: rgb($i * 2, $i * 30, $i * 40);
+    }
+}
+.bloco1 {
+    width: 50px;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2 5 100px;
+}

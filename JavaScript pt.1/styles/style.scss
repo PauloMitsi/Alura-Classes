@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* Color Theme Swatches in Hex */
+$BG-color-1-hex: #3f4242;
+$BG-color-2-hex: #c4cfcd;
+$BG-color-3-hex: #7c8281;
+$BG-color-4-hex: #4e5251;
+$BG-color-5-hex: #636968;
+
+body {
+    background-color: darken($color: $BG-color-1-hex, $amount: 15);
+    color: $BG-color-2-hex;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+    background-color: $BG-color-5-hex;
+    padding: 10px;
+    .add {
+        fieldset {
+            margin: 15px auto;
+            label {
+                display: inline;
+            }
+            .box-inserir {
+                .inserir {
+                    margin: 5px auto;
+                    display: block;
+                    text-align: center;
+                    width: 100px;
+                    height: 25px;
+                    padding: 5px;
+                    font-size: 10pt;
+                }
+            }
+        }
+        .botao {
+            width: 150px;
+            height: 50px;
+        }
+    }
+    h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    table {
+        background-color: $BG-color-1-hex;
+        margin: 1.5em auto;
+        text-align: center;
+        td,
+        th {
+            padding: 5px;
+            border: 2px solid $BG-color-3-hex;
+        }
+        th {
+            background-color: darken($color: $BG-color-5-hex, $amount: 10);
+        }
+        tbody {
+            tr {
+                text-transform: capitalize;
+            }
+        }
+    }
+}

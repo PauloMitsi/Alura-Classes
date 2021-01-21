@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-/* Color Theme Swatches in Hex */
 
+/* Color Theme Swatches in Hex */
 $Wood-1-hex: #351a12;
 $Wood-2-hex: #e1a290;
 $Wood-3-hex: #db6a4a;
@@ -334,8 +334,9 @@ body {
 
 //header
 .box {
-    background-color: $Wood-4-hex;
+    background-color: transparentize($color: $Wood-4-hex, $amount: 0);
     .toppg {
+        
         width: 90%;
         height: 100%;
         margin: 0 auto;
@@ -431,8 +432,8 @@ body {
             padding-bottom: 10px;
         }
     }
-    
-    .endpg{
+
+    .endpg {
         font-size: 15px;
     }
 }

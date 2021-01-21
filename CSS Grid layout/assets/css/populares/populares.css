@@ -1,0 +1,104 @@
+.populares {
+  margin: 5rem 1.5rem;
+}
+
+.populares__info .populares__cabecalho {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 50px;
+  background-color: #ebebeb;
+  padding: 0 5px;
+}
+
+.populares__info .populares__cabecalho .populares__titulo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+.populares__info .populares__cabecalho .populares__botao {
+  background-color: transparent;
+  border: none;
+}
+
+.populares__itens {
+  margin-top: 1.5rem;
+}
+
+.populares__itens .populares__conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 15px;
+}
+
+.populares__itens .populares__conteudo .populares__card {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'card-imagem' 'card-corpo';
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 160px auto;
+      grid-template-rows: 160px auto;
+  background-color: white;
+  margin-right: 1rem;
+  width: calc(20% - 1rem);
+  border-radius: 10px;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___imagem {
+  height: 100%;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card-imagem;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___corpo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card-corpo;
+  gap: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'cabecalho' 'conteudo';
+  -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto;
+  padding: 0.75rem;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___corpo .populares__card___cabecalho {
+  text-align: center;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___corpo .populares__card___cabecalho .populares__card___titulo {
+  font-size: 1.5rem;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___corpo .populares__card___cabecalho .populares__card___data {
+  font-size: 0.75rem;
+}
+
+.populares__itens .populares__conteudo .populares__card .populares__card___corpo .populares__card___descricao {
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 1rem 0;
+}
+
+.populares__itens .populares__conteudo .populares__card:last-child {
+  margin-right: 0rem;
+}
+/*# sourceMappingURL=populares.css.map */
