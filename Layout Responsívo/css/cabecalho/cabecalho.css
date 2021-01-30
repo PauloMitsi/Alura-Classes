@@ -1,0 +1,108 @@
+.cabecalho {
+  background-color: #333333;
+  background: url(../../img/bg-intro.jpg) center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecalho .navegacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cabecalho .navegacao .navegacao__lista {
+  margin: 0.5rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cabecalho .navegacao .navegacao__lista .lista__items {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.cabecalho .navegacao .navegacao__lista .lista__items:hover {
+  border-bottom: 2px solid #b72e2e;
+}
+
+.cabecalho .borda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #b72e2e;
+  margin: 0 0 1.5rem;
+  width: 100%;
+}
+
+.cabecalho .chamada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-top: 3rem;
+}
+
+.cabecalho .chamada .chamada__titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.cabecalho .chamada .chamada__texto {
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 1.15rem;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.cabecalho .chamada .chamada__planos {
+  border-color: #b72e2e;
+}
+/*# sourceMappingURL=cabecalho.css.map */

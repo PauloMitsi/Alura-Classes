@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin boxShadow {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.125);
+}
+
+@mixin titulo {
+    padding: 2rem 0 0.5rem 0;
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+    font-family: $open-sans;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}

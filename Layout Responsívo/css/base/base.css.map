@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECMP,OAAO;CDLnB;;AAED,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,SAAS;CACrB;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,6BAA6B;EACpC,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,SAAS;EACjB,aAAa,EAAE,MAAM;EACrB,aAAa,EAAE,MAAM;EACrB,WAAW,ECZH,WAAW,EAAE,UAAU;EDa/B,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,GAAG;EAChB,KAAK,ECXA,IAAI;CDYZ",
+    "sources": [
+        "base.scss",
+        "../_constantes.scss"
+    ],
+    "names": [],
+    "file": "base.css"
+}

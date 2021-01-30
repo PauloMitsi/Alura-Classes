@@ -1,0 +1,58 @@
+@import '../constantes';
+@import '../mixins';
+
+@media screen and (max-width: 900px) {
+    .cabecalho {
+        background: $bg-rodape;
+    }
+    .cabecalho .borda {
+        flex-direction: column;
+    }
+
+    .cabecalho .chamada .chamada__texto {
+        width: calc(100vw - 6%);
+    }
+
+    .principal .destaques .destaques__painel{
+        padding: .5rem;
+    }
+
+    .principal .diferenciais .diferenciais__lista {
+        flex-direction: column;
+    }
+
+    .sobre__imagem {
+        display: none;
+    }
+    .principal .sobre .sobre__conteudo {
+        width: 100%;
+    }
+    .principal .sobre .sobre__conteudo .sobre__plataformas {
+        margin: 0;
+    }
+
+    .principal .planos .planos__cartoes {
+        align-items: center;
+        flex-direction: column;
+        .cartao {
+            margin: 0 0 1.5rem;
+            width: 65%;
+        }
+    }
+    .principal .institucional .institucional__video-adress{
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .principal .institucional .institucional__video-adress .institucional__video{
+        width: 100vw;
+    }
+    
+    .principal .institucional .institucional__titulo{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+

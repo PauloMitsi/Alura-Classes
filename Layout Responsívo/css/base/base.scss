@@ -1,0 +1,21 @@
+@import "../constantes";
+
+body{
+    background-color: $azul-claro;
+}
+
+.conteiner{
+    padding: 0 6% 0 6%;
+}
+
+.botao {
+    width: calc(100% - 2 * 0.5rem - 4px);
+    padding: 0.5rem;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: $open-sans;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: $branco;
+}
