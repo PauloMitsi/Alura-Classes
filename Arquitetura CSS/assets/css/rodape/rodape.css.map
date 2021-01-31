@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EEAJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EFDvB,gBAAgB,ECAF,OAAO;EDCrB,KAAK,ECFD,OAAO;EDGX,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "rodape.scss",
+        "../_contantes.scss",
+        "../_mixins.scss",
+        "../_contantes.scss"
+    ],
+    "names": [],
+    "file": "rodape.css"
+}

@@ -1,0 +1,150 @@
+@import '../contantes';
+@import '../mixins';
+
+.principal {
+
+    .banner {
+        .banner__titulo {
+            @include flex;
+
+            width: 100%;
+            height: 350px;
+            margin: 0;
+
+            text-align: center;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+
+            font-family: $titulo;
+            font-size: 5rem;
+            font-style: italic;
+
+            color: $branco;
+
+            background: url('../../img/banner.jpg') center / cover no-repeat;
+        }
+    }
+
+    .economizar {
+        @include flex;
+        padding: 3rem;
+        .economizar__titulo {
+            font-size: 2.5rem;
+            font-family: $titulo;
+            color: $vermelho-escuro;
+            margin-bottom: 1.5rem;
+        }
+
+        .economizar__texto {
+            color: $cinza-claro;
+            font-size: 1.25rem;
+        }
+    }
+
+    .receitas {
+        background-color: $bg-cinza;
+        padding: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .receita {
+            @include boxShadow;
+            $constante-img: calc((100% - (286px * 3)) / 10);
+
+            display: flex;
+            flex-direction: column;
+
+            max-width: 286px;
+            background-color: $branco;
+            margin: $constante-img;
+
+            .receita__imagem {
+                width: 100%;
+            }
+
+            .receita__conteudo {
+                padding: 1rem;
+
+                .receita__titulo {
+                    font-size: 1.25rem;
+                }
+
+                .receita__descricao {
+                    margin: 1.25rem 0;
+                }
+
+                .receita__botao {
+                    background-color: $vermelho-escuro;
+                    color: $branco;
+                    padding: 0.5rem;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: darken(
+                            $color: $vermelho-escuro,
+                            $amount: 5
+                        );
+                    }
+                }
+            }
+        }
+    }
+
+    .quemSomos {
+        @include flex;
+
+        padding-top: 1.5rem;
+        .quemSomos__titulo {
+            @include titulo;
+        }
+
+        .quemSomos__descricao {
+            color: $cinza-claro;
+            margin-bottom: 3rem;
+            font-size: 1.25rem;
+        }
+
+        .pessoas {
+            @include flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            padding: 1.5rem 0;
+            .pessoa {
+                @include flex;
+
+                .pessoa__imagem {
+                    height: 261px;
+                    width: 261px;
+                    border-radius: 50%;
+                }
+
+                .pessoa__nome {
+                    font-family: $titulo;
+                    color: $vermelho-escuro;
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+                .pessoa__funcao {
+                    color: $cinza-claro;
+                    margin-top: 0.5rem;
+                }
+
+                .pessoa__imagem--roberta {
+                    background-image: url(../../img/pessoas/roberta.jpg);
+                }
+                .pessoa__imagem--marcela {
+                    background-image: url(../../img/pessoas/marcela.jpg);
+                }
+                .pessoa__imagem--andreia {
+                    background-image: url(../../img/pessoas/andreia.jpg);
+                }
+            }
+        }
+    }
+    
+}

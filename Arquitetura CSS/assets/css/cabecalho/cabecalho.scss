@@ -1,0 +1,35 @@
+@import '../contantes';
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navegacao__lista {
+        display: flex;
+        justify-content: space-between;
+        .navegacao__lista--item {
+            .navegacao__lista--link {
+                margin-right: 1rem;
+                color: $cinza-claro;
+                width: 100%;
+
+                &.ativo {
+                    color: black;
+                    font-weight: 700;
+                }
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &:last-child {
+                .navegacao__lista--link {
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+}

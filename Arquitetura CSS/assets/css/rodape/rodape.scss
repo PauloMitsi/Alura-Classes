@@ -1,0 +1,9 @@
+@import '../contantes';
+@import '../mixins';
+
+.rodape {
+    @include flex;
+    background-color: $vermelho-escuro;
+    color: $branco;
+    height: 50px;
+}

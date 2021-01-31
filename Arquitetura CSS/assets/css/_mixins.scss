@@ -1,0 +1,19 @@
+@import "../css/contantes";
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin boxShadow {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+@mixin titulo {
+    font-size: 2.5rem;
+    font-family: $titulo;
+    color: $vermelho-escuro;
+    margin-bottom: 1.5rem;
+}

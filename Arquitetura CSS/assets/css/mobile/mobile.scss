@@ -1,0 +1,99 @@
+@media screen and (min-width: 0) {
+    .cabecalho {
+        flex-direction: column;
+        margin: 1.5rem auto;
+    }
+
+    .cabecalho__imagem {
+        margin-bottom: 1.5rem;
+    }
+
+    .cabecalho .navegacao__lista {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho .navegacao__lista .navegacao__lista--item {
+        margin-bottom: 1rem;
+    }
+
+    .cabecalho
+        .navegacao__lista
+        .navegacao__lista--item
+        .navegacao__lista--link {
+        margin-right: 0;
+        font-size: 1.25rem;
+    }
+
+    .principal .economizar .economizar__titulo {
+        font-size: 2rem;
+    }
+
+    .principal .banner .banner__titulo {
+        font-size: 3rem;
+    }
+
+    .principal .receitas {
+        padding: 3rem;
+    }
+
+    .principal .receitas .receita {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .principal .quemSomos .quemSomos__descricao {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+    .principal .quemSomos .pessoas {
+        flex-direction: column;
+    }
+    .principal .quemSomos .pessoas .pessoa {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 668px) {
+    .cabecalho {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .cabecalho__imagem {
+        margin-bottom: 0;
+    }
+
+    .cabecalho .navegacao__lista {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho .navegacao__lista .navegacao__lista--item {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .principal .receitas .receita {
+        margin: calc((100% - ((286px) / 2 * 3)) / 10);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .principal .receitas {
+        padding: 0;
+    }
+
+    .principal .receitas .receita {
+        margin: calc((100% - ((286px) * 3)) / 10);
+    }
+
+    .principal .quemSomos .pessoas {
+        flex-direction: row;
+    }
+}
