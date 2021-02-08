@@ -1,0 +1,129 @@
+/* Color Theme Swatches in Hex */
+$branco: #f1f1f1;
+$Predator-Freak-1-hex: #030ba6;
+$Predator-Freak-2-hex: #020873;
+$Predator-Freak-3-hex: #030640;
+$Predator-Freak-4-hex: #020426;
+$Predator-Freak-5-hex: #e1f25c;
+
+body {
+    background-color: $Predator-Freak-4-hex;
+    font-family: 'montserrat', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: $Predator-Freak-3-hex;
+    color: $Predator-Freak-5-hex;
+
+    min-width: 700px;
+    min-height: 350px;
+
+    padding: 1.5rem;
+
+    .titulo {
+        width: calc(100%);
+        align-self: flex-start;
+        border-bottom: 2px solid $Predator-Freak-1-hex;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .caixa-botao {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+        .caixa {
+            text-align: center;
+            height: 50px;
+            font-size: 1.25rem;
+            color: $Predator-Freak-5-hex;
+            border: 1px solid transparent;
+            background-color: $Predator-Freak-1-hex;
+        }
+
+        .botao {
+            border: none;
+            background-color: $Predator-Freak-1-hex;
+            color: $Predator-Freak-5-hex;
+        }
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+
+        padding-top: 1.5rem;
+        width: calc(100% - 3rem);
+
+        li {
+            .data {
+                font-size: 1.5rem;
+                padding: 4rem 0 0.5rem 0;
+            }
+            &:first-child {
+                .data {
+                    padding: 0;
+                }
+            }
+        }
+
+        .tarefa {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background-color: $Predator-Freak-1-hex;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: calc(100% - 1rem);
+            height: auto;
+            &:first-child {
+                margin-top: 0;
+            }
+            .conteudo {
+                word-wrap: break-word;
+                text-align: center;
+                width: 50%;
+            }
+        }
+    }
+}
+
+.feita {
+    .conteudo {
+        text-decoration: line-through;
+    }
+}
+
+.botaoLista-check {
+    background-color: $Predator-Freak-5-hex;
+    color: $Predator-Freak-4-hex;
+    border: none;
+    padding: 0.25rem;
+    font-weight: 700;
+    align-content: flex-end;
+    width: 20%;
+}
+
+.botaoLista-del {
+    background-color: $Predator-Freak-4-hex;
+    color: $Predator-Freak-5-hex;
+    border: none;
+    padding: 0.25rem;
+    font-weight: 700;
+    width: 20%;
+}

@@ -1,0 +1,147 @@
+/* Color Theme Swatches in Hex */
+body {
+  background-color: #020426;
+  font-family: 'montserrat', sans-serif;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #030640;
+  color: #e1f25c;
+  min-width: 700px;
+  min-height: 350px;
+  padding: 1.5rem;
+}
+
+.todo-list .titulo {
+  width: calc(100%);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom: 2px solid #030ba6;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.todo-list .caixa-botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.todo-list .caixa-botao .caixa {
+  text-align: center;
+  height: 50px;
+  font-size: 1.25rem;
+  color: #e1f25c;
+  border: 1px solid transparent;
+  background-color: #030ba6;
+}
+
+.todo-list .caixa-botao .botao {
+  border: none;
+  background-color: #030ba6;
+  color: #e1f25c;
+}
+
+.todo-list .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  padding-top: 1.5rem;
+  width: calc(100% - 3rem);
+}
+
+.todo-list .lista li .data {
+  font-size: 1.5rem;
+  padding: 4rem 0 0.5rem 0;
+}
+
+.todo-list .lista li:first-child .data {
+  padding: 0;
+}
+
+.todo-list .lista .tarefa {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #030ba6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 1rem);
+  height: auto;
+}
+
+.todo-list .lista .tarefa:first-child {
+  margin-top: 0;
+}
+
+.todo-list .lista .tarefa .conteudo {
+  word-wrap: break-word;
+  text-align: center;
+  width: 50%;
+}
+
+.feita .conteudo {
+  text-decoration: line-through;
+}
+
+.botaoLista-check {
+  background-color: #e1f25c;
+  color: #020426;
+  border: none;
+  padding: 0.25rem;
+  font-weight: 700;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: 20%;
+}
+
+.botaoLista-del {
+  background-color: #020426;
+  color: #e1f25c;
+  border: none;
+  padding: 0.25rem;
+  font-weight: 700;
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */

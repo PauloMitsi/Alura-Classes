@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CEEP</title>
+
+        <link rel="stylesheet" href="assets/normalize.css" />
+        <link rel="stylesheet" href="assets/reset.css" />
+        <link rel="stylesheet" href="assets/style/style.css" />
+    </head>
+    <body>
+        <main class="principal">
+            <section class="todo-list">
+                <h1 class="titulo">CEEP</h1>
+
+                <form class="caixa-botao">
+                    <input class="caixa" type="text" data-form-input />
+                    <input
+                        type="datetime-local"
+                        placeholder="dd/mm/yyyy"
+                        data-form-calendario
+                    />
+                    <button class="botao" type="submit" data-form-button>
+                        New Item
+                    </button>
+                </form>
+
+                <ul class="lista" data-lista></ul>
+            </section>
+        </main>
+    </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"
+    ></script>
+    <script type="module" src="assets/main.js"></script>
+</html>
