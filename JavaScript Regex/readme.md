@@ -1,4 +1,4 @@
-# ***Regurlar Expressions - REGEX***
+# ***Regular Expressions - REGEX***
 
 ## 📃 Introdução
 Por meio dos RegEx é possivel determinar padrões para encontar conjuntos de caracteres específicos. Com isso, se torna uma ferramenta muito interessante para validação de dados ou até mesmo para encontrar determinada palavra ou expressão.
